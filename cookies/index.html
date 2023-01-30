@@ -1,14 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <link rel="stylesheet" href="style.css">
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Cookies_css.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300&display=swap" rel="stylesheet">
+    <title>Document</title>
 </head>
 <body>
-  
+    
+    <section class="container_cookies">
+        <div class="wrap_cookies">
+            <p class="txt_cookies">Пользуясь нашим сайтом, вы соглашаетесь с тем, что
+            <a href="#" class="link_cookies">мы используем cookies</a></p>
+            <button class="btn_cookies" id="cookie_close">ОК</button>
+        </div>
+    </section>
+    
 </body>
+<script>
+function getCookie(name) {
+  let matches = document.cookie.match(
+    new RegExp(
+      "(?:^|; )" +
+        name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, "\\$1") +
+        "=([^;]*)"
+    )
+  );
+  return matches ? decodeURIComponent(matches[1]) : undefined;
+}
+let cookiecook = getCookie("cookiecook"),
+  cookiewin = document.getElementsByClassName("container_cookies")[0];
+if (cookiecook != "no") {
+  cookiewin.style.display = "block";
+  document
+    .getElementById("cookie_close")
+    .addEventListener("click", function () {
+      cookiewin.style.display = "none";
+      let date = new Date();
+      date.setDate(date.getDate() + 1);
+      document.cookie = "cookiecook=no; path=/; expires=" + date.toUTCString();
+    });
+}
+</script>
 </html>

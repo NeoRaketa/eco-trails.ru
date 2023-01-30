@@ -1,0 +1,66 @@
+.wrap_cookies{
+    display: flex;
+}
+
+.txt_cookies, .link_cookies{
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+}
+
+.btn_cookies{
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px 16px;
+width: 56px;
+height: 32px;
+background: #292D32;
+border-radius: 8px;
+border: solid #292D32 ;
+order: 1;
+flex-grow: 0;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 120%;
+align-items: center;
+text-align: center;
+color: #FFFFFF;
+margin-left: 20px;
+cursor: pointer;
+}
+
+.wrap_cookies{
+box-sizing: border-box;
+background: #FFFFFF;
+border: 1px solid #000000;
+border-radius: 12px;
+align-items: center;
+padding: 8px 12px;
+width: 640px;
+height: 48px;
+margin-left: 191px;
+bottom: 0px;
+}
+
+/* Планшет */
+@media (max-width: 667px) {
+    .wrap_cookies {
+        margin-left: 30px;
+    }
+}
+
+/* Телефон */
+@media (max-width: 380px) {
+    .wrap_cookies {
+        margin-left: 10px;
+        width: 320px;
+        height: 55px;
+    }
+}
