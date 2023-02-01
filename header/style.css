@@ -1,0 +1,91 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+  }
+  .main-header {
+    max-width: 1600px;
+    height: 81px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .logo-header {
+    display: inline-flex;
+    width: 130.21px;
+    height: 38px;
+  }
+  .href-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .logo-picture {
+    padding-right: 11px;
+    width: 26px;
+    height: 32px;
+  }
+  .logo-text {
+    width: 93px;
+    font-family: "Montserrat";
+    font-size: 16px;
+    font-weight: 700;
+  }
+  .center-navigation {
+    display: flex;
+    justify-content: space-around;
+  }
+  .menu-navigation {
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+  }
+  .container-navigation-text {
+    padding-left: 62px;
+  }
+  .container-navigation-text:first-child {
+    padding-left: 0;
+  }
+  .header-text {
+    color: black;
+    text-decoration: none;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .icon-navigation {
+    list-style-type: none;
+    display: flex;
+  }
+  .container-navigation-icon:last-child {
+    display: none;
+  }
+  
+  @media (max-width: 1024px) {
+    .logo-header {
+      margin: 0;
+      margin-left: 24.45px;
+    }
+    .icon-navigation {
+      margin: 0;
+      margin-right: 24px;
+    }
+  }
+  @media (max-width: 375px) {
+    .logo-header {
+      margin-left: 21px;
+    }
+    .center-navigation {
+      display: none;
+    }
+    .container-navigation-icon:last-child {
+      display: block;
+    }
+    .icon-navigation {
+      margin: 0;
+      margin-right: 19.64px;
+    }
+  }
+  
