@@ -46,6 +46,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 352px;
   }
   .author_rules {
     font-style: normal;
