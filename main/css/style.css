@@ -1,0 +1,309 @@
+@font-face {
+	font-family: 'Avante Bold'; 
+	src: url(../../fonts/a_AvanteInt_Bold.ttf); 
+}
+@font-face {
+	font-family: 'Avante Bold Italic'; 
+	src: url(../../fonts/a_AvanteInt_BoldItalic.ttf); 
+}
+@font-face {
+	font-family: 'Avante Book'; 
+	src: url(../../fonts/a_AvanteInt_Book.ttf); 
+}
+@font-face {
+	font-family: 'Avante Book Italic'; 
+	src: url(../../fonts/a_AvanteInt_BookItalic.ttf); 
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  outline: none;
+}
+html { box-sizing: border-box }
+*, *::before, *::after { box-sizing: border-box }
+body { background:#F3F7ED; font-size: 100%; line-height: 1.2; font-family: 'Avante Bold', sans-serif; color: #1F271B;}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+ol, ul { list-style: none; }
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+strong { font-weight: bold; } 
+input { outline: none; }
+table { border-collapse: collapse; border-spacing: 0; }
+img { border: 0; max-width: 100%; height: auto; }
+a { text-decoration: none; color: #1F271B; }
+
+.wrap {
+  max-width: 1220px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.title {
+  width:fit-content;
+  margin: 0 auto;
+  position: relative;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 32px;
+  line-height: 1.3;
+  margin-bottom: 64px;
+}
+
+.title::before {
+  position: absolute;
+  left: -84px;
+  content: url(../img/title-left-line.png);
+  top: -3px;
+}
+
+.title::after {
+  position: absolute;
+  right: -84px;
+  content: url(../img/title-right-line.png);
+  top: -3px;
+}
+
+/* intro  */
+.intro {
+  background: url(../img/intro.jpg) top right no-repeat rgb(32, 64, 32);
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  margin-bottom: 110px;
+  padding: 300px 0 308px;
+  animation: slideBG 12s linear infinite 0s;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes slideBG {
+  0% {
+    background-image: url(../img/intro.jpg);
+  }
+  40% {
+    background-image: url(../img/intro.jpg);
+  }
+  45% {
+    background-image: url(../img/trail-image.png);
+  }
+  95% {
+    background-image: url(../img/trail-image.png);
+  }
+  100% {
+    background-image: url(../img/intro.jpg);
+  }
+}
+
+.intro-title {
+  margin-bottom: 30px;
+  font-size: 48px;
+  line-height: 1.35;
+  color: #F7FBFB;
+  text-transform: uppercase;
+}
+
+.intro-img {
+  display: block;
+  margin: 0 auto 44px;
+
+}
+
+.intro-btn {
+  padding: 16px 20px 13px;
+  color:white;
+  text-transform: uppercase;
+  border-radius: 7px;
+  background: #F19953;
+  font-size: 24px;
+  line-height: 1.4;
+  transition: .3s;
+}
+
+.intro-btn:hover {
+  background: #F7FBFB;
+  color: #F19953;
+}
+
+/* popular  */
+.popular {
+  margin-bottom: 180px;
+}
+
+.popular > .wrap {
+  padding-bottom: 60px;
+} 
+
+.popular-list {
+  margin: 0px 110px;
+  overflow: hidden;
+}
+
+.swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  border: 0.5px solid #1F271B;
+  background: transparent;
+  border-radius: 0;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-transform-origin: center;
+  -moz-transform-origin: center;
+  -ms-transform-origin: center;
+  -o-transform-origin: center;
+  transform-origin: center;
+}
+
+.swiper-pagination-bullet-active {
+  background: #1F271B;
+}
+
+.swiper-myBtn {
+  color: #1F271B;
+}
+
+.popular-item {
+  background: #F7FBFB;
+  border: 1px solid black;
+  box-shadow: 0px 28px 38px rgba(0, 0, 0, 0.12), 0px 12px 22px rgba(0, 0, 0, 0.16);
+  border-radius: 8px;
+  transition: all .2s ease;
+}
+
+.popular-item:hover {
+  background: #F19953;
+}
+
+.trail-img {
+  filter: drop-shadow(0px 3px 8px rgba(0, 0, 0, 0.35));
+  border-radius: 8px;
+}
+
+.trail-info {
+  padding: 15px 21px;
+}
+
+.trail-title-link h2 {
+  font-size: 22px;
+  line-height: 27px;
+  height:54px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.trail-location > p {
+  background: url(../img/location.svg) no-repeat;
+  /* background-size: 23px 23px; */
+  background-position: 0% 0%;
+  padding-left: 25px;
+  font-size: 16px;
+  line-height: 25px;
+  height: 50px;
+  font-family: Avante Book;
+  overflow: hidden;
+}
+
+.trail-spec {
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.trail-spec img {
+  margin-bottom: 10px;
+}
+
+.trail-spec > a {
+  text-align: center;
+}
+
+/* partners  */
+.partners {
+  margin-bottom: 110px;
+}
+
+.partners-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* faq  */
+.faq {
+  margin-bottom: 85px;
+}
+
+.faq-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.faq-item {
+  padding: 16px 30px 24px;
+}
+
+summary::-webkit-details-marker{display:none;}
+summary::-moz-list-bullet{list-style-type:none;}
+summary::marker{display:none;} 
+summary {
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 30px 16px;
+  font-size:1.4em;
+  cursor: pointer;
+  position: relative;
+}
+summary:before {
+  left: 0;
+  top: 100%;
+  background: url(../img/faq-arrow.png) no-repeat;
+  width: 100%;
+  height: 100%;
+  content: "";
+  position: absolute;
+}
+summary:after {
+  right: 30px;
+  top: 15px;
+  background: url(../img/faq-toggle.png) no-repeat;
+  width: 20px;
+  height: 36px;
+  content: "";
+  position: absolute;
+  transition: transform .5s;
+  z-index: 99;
+}
+details[open] > summary:after {
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+  -webkit-transform-origin: center;
+  -moz-transform-origin: center;
+  -ms-transform-origin: center;
+  -o-transform-origin: center;
+  transform-origin: center;
+}
+details[open] summary ~ * { 
+  animation: sweep 1s ease;
+}
+@keyframes sweep {
+  0%    {opacity: 0;}
+  100%  {opacity: 1;}
+}
+.faq-item-text {
+  font-size: 20px;
+  line-height: 1.45;
+  padding: 0px 30px;
+  margin-top: 20px;
+  font-family: Avante Book;
+}
