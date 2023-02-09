@@ -39,6 +39,7 @@ body {
   align-items: center;
 }
 .logo-picture {
+  margin-right: 10px;
   width: 26px;
   height: 32px;
 }
@@ -64,6 +65,7 @@ body {
   font-weight: 300;
   font-size: 16px;
   line-height: 19px;
+  text-align: start;
 }
 .container-navigation-text {
   height: 23px;
