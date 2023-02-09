@@ -1,21 +1,101 @@
 @font-face {
-	font-family: 'Avante Bold'; 
-	src: url(../../fonts/a_AvanteInt_Bold.ttf); 
+  font-family: "Avante Bold";
+  src: url(../../fonts/a_AvanteInt_Bold.ttf);
 }
 @font-face {
-	font-family: 'Avante Bold Italic'; 
-	src: url(../../fonts/a_AvanteInt_BoldItalic.ttf); 
+  font-family: "Avante Bold Italic";
+  src: url(../../fonts/a_AvanteInt_BoldItalic.ttf);
 }
 @font-face {
-	font-family: 'Avante Book'; 
-	src: url(../../fonts/a_AvanteInt_Book.ttf); 
+  font-family: "Avante Book";
+  src: url(../../fonts/a_AvanteInt_Book.ttf);
 }
 @font-face {
-	font-family: 'Avante Book Italic'; 
-	src: url(../../fonts/a_AvanteInt_BookItalic.ttf); 
+  font-family: "Avante Book Italic";
+  src: url(../../fonts/a_AvanteInt_BookItalic.ttf);
 }
 
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -24,18 +104,72 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   vertical-align: baseline;
   outline: none;
 }
-html { box-sizing: border-box }
-*, *::before, *::after { box-sizing: border-box }
-body { background:#F3F7ED; font-size: 100%; line-height: 1.2; font-family: 'Avante Bold', sans-serif; color: #1F271B;}
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
-ol, ul { list-style: none; }
-blockquote, q { quotes: none; }
-blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
-strong { font-weight: bold; } 
-input { outline: none; }
-table { border-collapse: collapse; border-spacing: 0; }
-img { border: 0; max-width: 100%; height: auto; }
-a { text-decoration: none; color: #1F271B; }
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background: #f3f7ed;
+  font-size: 100%;
+  line-height: 1.2;
+  font-family: "Avante Bold", sans-serif;
+  color: #1f271b;
+  max-width: 1600px;
+  height: 2660px;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+strong {
+  font-weight: bold;
+}
+input {
+  outline: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+img {
+  border: 0;
+  max-width: 100%;
+  height: auto;
+}
+a {
+  text-decoration: none;
+  color: #1f271b;
+}
 
 .wrap {
   max-width: 1220px;
@@ -44,7 +178,7 @@ a { text-decoration: none; color: #1F271B; }
 }
 
 .title {
-  width:fit-content;
+  width: fit-content;
   margin: 0 auto;
   position: relative;
   text-transform: uppercase;
@@ -75,11 +209,14 @@ a { text-decoration: none; color: #1F271B; }
   background-position: center;
   text-align: center;
   margin-bottom: 110px;
-  padding: 300px 0 308px;
+  height: 1080px;
   animation: slideBG 12s linear infinite 0s;
   animation-timing-function: ease-in-out;
 }
-
+.intro-content {
+  position: relative;
+  top: 300px;
+}
 @keyframes slideBG {
   0% {
     background-image: url(../img/intro.jpg);
@@ -102,30 +239,29 @@ a { text-decoration: none; color: #1F271B; }
   margin-bottom: 30px;
   font-size: 48px;
   line-height: 1.35;
-  color: #F7FBFB;
+  color: #f7fbfb;
   text-transform: uppercase;
 }
 
 .intro-img {
   display: block;
   margin: 0 auto 44px;
-
 }
 
 .intro-btn {
   padding: 16px 20px 13px;
-  color:white;
+  color: white;
   text-transform: uppercase;
   border-radius: 7px;
-  background: #F19953;
+  background: #f19953;
   font-size: 24px;
   line-height: 1.4;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .intro-btn:hover {
-  background: #F7FBFB;
-  color: #F19953;
+  background: #f7fbfb;
+  color: #f19953;
 }
 
 /* popular  */
@@ -135,7 +271,7 @@ a { text-decoration: none; color: #1F271B; }
 
 .popular > .wrap {
   padding-bottom: 60px;
-} 
+}
 
 .popular-list {
   margin: 0px 110px;
@@ -145,7 +281,7 @@ a { text-decoration: none; color: #1F271B; }
 .swiper-pagination-bullet {
   width: 8px;
   height: 8px;
-  border: 0.5px solid #1F271B;
+  border: 0.5px solid #1f271b;
   background: transparent;
   border-radius: 0;
   -webkit-transform: rotate(-45deg);
@@ -161,23 +297,25 @@ a { text-decoration: none; color: #1F271B; }
 }
 
 .swiper-pagination-bullet-active {
-  background: #1F271B;
+  background: #1f271b;
 }
 
 .swiper-myBtn {
-  color: #1F271B;
+  color: #1f271b;
 }
 
 .popular-item {
-  background: #F7FBFB;
+  max-width: 282px;
+  background: #f7fbfb;
   border: 1px solid black;
-  box-shadow: 0px 28px 38px rgba(0, 0, 0, 0.12), 0px 12px 22px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 28px 38px rgba(0, 0, 0, 0.12),
+    0px 12px 22px rgba(0, 0, 0, 0.16);
   border-radius: 8px;
-  transition: all .2s ease;
+  transition: all 0.2s ease;
 }
 
 .popular-item:hover {
-  background: #F19953;
+  background: #f19953;
 }
 
 .trail-img {
@@ -192,14 +330,13 @@ a { text-decoration: none; color: #1F271B; }
 .trail-title-link h2 {
   font-size: 22px;
   line-height: 27px;
-  height:54px;
+  height: 54px;
   overflow: hidden;
   margin-bottom: 10px;
 }
 
 .trail-location > p {
   background: url(../img/location.svg) no-repeat;
-  /* background-size: 23px 23px; */
   background-position: 0% 0%;
   padding-left: 25px;
   font-size: 16px;
@@ -249,15 +386,21 @@ a { text-decoration: none; color: #1F271B; }
   padding: 16px 30px 24px;
 }
 
-summary::-webkit-details-marker{display:none;}
-summary::-moz-list-bullet{list-style-type:none;}
-summary::marker{display:none;} 
+summary::-webkit-details-marker {
+  display: none;
+}
+summary::-moz-list-bullet {
+  list-style-type: none;
+}
+summary::marker {
+  display: none;
+}
 summary {
-  display:flex;
+  display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 16px 30px 16px;
-  font-size:1.4em;
+  font-size: 1.4em;
   cursor: pointer;
   position: relative;
 }
@@ -278,7 +421,7 @@ summary:after {
   height: 36px;
   content: "";
   position: absolute;
-  transition: transform .5s;
+  transition: transform 0.5s;
   z-index: 99;
 }
 details[open] > summary:after {
@@ -293,12 +436,16 @@ details[open] > summary:after {
   -o-transform-origin: center;
   transform-origin: center;
 }
-details[open] summary ~ * { 
+details[open] summary ~ * {
   animation: sweep 1s ease;
 }
 @keyframes sweep {
-  0%    {opacity: 0;}
-  100%  {opacity: 1;}
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 .faq-item-text {
   font-size: 20px;

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,9 +11,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/headerStyle.css">
+    <link rel="stylesheet" href="./css/footer_Style.css">
     <title>Экотропы России | Экотуризм</title>
-    
 </head>
+
 <body>
 
     <!-- Главная страница -->
@@ -20,6 +23,79 @@
     <main>
         <!-- intro -->
         <div class="intro">
+            <!-- header -->
+            <header>
+                <div class="opasity-header">
+                </div>
+                <div class="main-header">
+                    <section class="container-header">
+                        <div class="logo-header">
+                            <a class="href-logo" href="https://eco-trails.ru/"><svg class="logo-picture" width="28"
+                                    height="34" viewBox="0 0 28 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path id="logo-picture-color"
+                                        d="M25.9076 8.95654C26.6043 10.606 26.9997 12.4108 26.9997 14.3319V19.6685C26.9997 27.0427 21.2001 33.0002 14.0637 33.0002C12.6138 33.0002 11.2016 32.7479 9.90234 32.3016M22.9328 4.62887C20.6167 2.3778 17.491 1 14.0451 1C6.88986 1 1.09037 6.97696 1.09037 14.3317C1.09037 16.9903 0.770216 19.6877 1.33511 22.3075C1.86234 24.772 3.04864 27.1007 4.72448 28.9442M16.1346 25.354C15.4944 25.6062 14.7977 25.7421 14.0633 25.7421C10.8246 25.7421 8.18848 23.0253 8.18848 19.6875V14.9719M11.4844 8.87868C12.2564 8.49056 13.1225 8.2771 14.0452 8.2771C17.2839 8.2771 19.9201 10.9939 19.9201 14.3317V19.6682C19.9201 19.9981 19.9012 20.3474 19.8448 20.6579M14.0449 15.2051V18.1936"
+                                        stroke="#F7FBFB" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </a>
+                            <strong class="logo-text">Экотропы России</strong>
+                        </div>
+                        <nav class="center-navigation">
+                            <ul class="menu-navigation">
+                                <li class="container-navigation-text"><a class="header-text-first" id="cotalog-cont"
+                                        href="https://eco-trails.ru/catalog/">Каталог</a>
+                                    <div id="animation1" hidden>
+                                        <div class="cotalog-animation"><img src="./img/icons8-ромб-48.png" id="cotalog"
+                                                class="romb1-2">
+                                            <div class="line1" id="line1"></div><img src="./img/icons8-ромб-48.png"
+                                                id="cotalog" class="romb1-1">
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="container-navigation-text"><a class="header-text-center" id="popular-cont"
+                                        href="#popular-href">Популярные
+                                        экотропы</a>
+                                    <div id="animation2" hidden>
+                                        <div class="popular-animation"><img src="./img/icons8-ромб-48.png" id="popular"
+                                                class="romb2-2">
+                                            <div class="line2"></div><img src="./img/icons8-ромб-48.png" id="popular"
+                                                class="romb2-1">
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="container-navigation-text"><a class="header-text-last" id="FAQ-cont"
+                                        href="#faq-href">FAQ</a>
+                                    <div id="animation3" hidden>
+                                        <div class="FAQ-animation"><img src="./img/icons8-ромб-48.png" id="FAQ"
+                                                class="romb3-2">
+                                            <div class="line3"></div><img src="./img/icons8-ромб-48.png" id="FAQ"
+                                                class="romb3-1">
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </nav>
+                        <nav class="icon-navigation">
+                            <ul class="menu-navigation">
+                                <li class="container-navigation-icon"><img class="icon-header"
+                                        src="./img/search-white.svg" alt="search"></li>
+                                <li class="container-navigation-icon">
+                                    <div class="container-location"><img class="icon-header" src="./img/map-white.svg"
+                                            alt="location">
+                                        <div class="line-location"></div>
+                                    </div>
+                                </li>
+                                <li class="container-navigation-icon"><a href="https://eco-trails.ru/catalog/"><img
+                                            class="icon-header" src="./img/catalog-icon-white.svg" alt="catalog"></a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </section>
+                    <script src="./headerScript.js"></script>
+                </div>
+            </header>
+
+
             <div class="wrap">
                 <div class="intro-content">
                     <h1 class="intro-title">Все экотропы России в одном месте</h1>
@@ -31,7 +107,7 @@
 
         <!-- popular trails -->
         <div class="popular">
-            <h2 class="title popular-title">Популярные экотропы</h2>
+            <h2 id="popular-href" class="title popular-title">Популярные экотропы</h2>
             <div class="wrap swiper">
                 <div class="popular-list">
                     <div class="popular-wrap swiper-wrapper">
@@ -39,8 +115,12 @@
                         <div class="popular-item swiper-slide">
                             <img src="img/trail-image.png" alt="Экотропа" class="trail-img">
                             <div class="trail-info">
-                                <a href="#" class="trail-title-link"><h2 title="Комаровский берег">Комаровский берег</h2></a>
-                                <a href="#" class="trail-location" title="Ленинградская область, г. Сестрорецк"><p>Ленинградская область, п. Муркино</p></a>
+                                <a href="#" class="trail-title-link">
+                                    <h2 title="Комаровский берег">Комаровский берег</h2>
+                                </a>
+                                <a href="#" class="trail-location" title="Ленинградская область, г. Сестрорецк">
+                                    <p>Ленинградская область, п. Муркино</p>
+                                </a>
                                 <div class="trail-spec">
                                     <a href="#" class="trail-distance">
                                         <img src="img/dist.svg" alt="Длина тропы">
@@ -60,8 +140,12 @@
                         <div class="popular-item swiper-slide">
                             <img src="img/trail-image.png" alt="Экотропа" class="trail-img">
                             <div class="trail-info">
-                                <a href="#" class="trail-title-link"><h2 title="Комаровский берег">Комаровский берег</h2></a>
-                                <a href="#" class="trail-location" title="Ленинградская область, г. Сестрорецк"><p>Ленинградская область, п. Муркино</p></a>
+                                <a href="#" class="trail-title-link">
+                                    <h2 title="Комаровский берег">Комаровский берег</h2>
+                                </a>
+                                <a href="#" class="trail-location" title="Ленинградская область, г. Сестрорецк">
+                                    <p>Ленинградская область, п. Муркино</p>
+                                </a>
                                 <div class="trail-spec">
                                     <a href="#" class="trail-distance">
                                         <img src="img/dist.svg" alt="Длина тропы">
@@ -81,8 +165,12 @@
                         <div class="popular-item swiper-slide">
                             <img src="img/trail-image.png" alt="Экотропа" class="trail-img">
                             <div class="trail-info">
-                                <a href="#" class="trail-title-link"><h2 title="Комаровский берег">Комаровский берег</h2></a>
-                                <a href="#" class="trail-location" title="Ленинградская область, г. Сестрорецк"><p>Ленинградская область, п. Муркино</p></a>
+                                <a href="#" class="trail-title-link">
+                                    <h2 title="Комаровский берег">Комаровский берег</h2>
+                                </a>
+                                <a href="#" class="trail-location" title="Ленинградская область, г. Сестрорецк">
+                                    <p>Ленинградская область, п. Муркино</p>
+                                </a>
                                 <div class="trail-spec">
                                     <a href="#" class="trail-distance">
                                         <img src="img/dist.svg" alt="Длина тропы">
@@ -102,8 +190,12 @@
                         <div class="popular-item swiper-slide">
                             <img src="img/trail-image.png" alt="Экотропа" class="trail-img">
                             <div class="trail-info">
-                                <a href="#" class="trail-title-link"><h2 title="Комаровский берег">Комаровский берег</h2></a>
-                                <a href="#" class="trail-location" title="Ленинградская область, г. Сестрорецк"><p>Ленинградская область, п. Муркино</p></a>
+                                <a href="#" class="trail-title-link">
+                                    <h2 title="Комаровский берег">Комаровский берег</h2>
+                                </a>
+                                <a href="#" class="trail-location" title="Ленинградская область, г. Сестрорецк">
+                                    <p>Ленинградская область, п. Муркино</p>
+                                </a>
                                 <div class="trail-spec">
                                     <a href="#" class="trail-distance">
                                         <img src="img/dist.svg" alt="Длина тропы">
@@ -123,8 +215,12 @@
                         <div class="popular-item swiper-slide">
                             <img src="img/trail-image.png" alt="Экотропа" class="trail-img">
                             <div class="trail-info">
-                                <a href="#" class="trail-title-link"><h2 title="Комаровский берег">Комаровский берег</h2></a>
-                                <a href="#" class="trail-location" title="Ленинградская область, г. Сестрорецк"><p>Ленинградская область, п. Муркино</p></a>
+                                <a href="#" class="trail-title-link">
+                                    <h2 title="Комаровский берег">Комаровский берег</h2>
+                                </a>
+                                <a href="#" class="trail-location" title="Ленинградская область, г. Сестрорецк">
+                                    <p>Ленинградская область, п. Муркино</p>
+                                </a>
                                 <div class="trail-spec">
                                     <a href="#" class="trail-distance">
                                         <img src="img/dist.svg" alt="Длина тропы">
@@ -144,8 +240,12 @@
                         <div class="popular-item swiper-slide">
                             <img src="img/trail-image.png" alt="Экотропа" class="trail-img">
                             <div class="trail-info">
-                                <a href="#" class="trail-title-link"><h2 title="Комаровский берег">Комаровский берег</h2></a>
-                                <a href="#" class="trail-location" title="Ленинградская область, г. Сестрорецк"><p>Ленинградская область, п. Муркино</p></a>
+                                <a href="#" class="trail-title-link">
+                                    <h2 title="Комаровский берег">Комаровский берег</h2>
+                                </a>
+                                <a href="#" class="trail-location" title="Ленинградская область, г. Сестрорецк">
+                                    <p>Ленинградская область, п. Муркино</p>
+                                </a>
                                 <div class="trail-spec">
                                     <a href="#" class="trail-distance">
                                         <img src="img/dist.svg" alt="Длина тропы">
@@ -165,8 +265,12 @@
                         <div class="popular-item swiper-slide">
                             <img src="img/trail-image.png" alt="Экотропа" class="trail-img">
                             <div class="trail-info">
-                                <a href="#" class="trail-title-link"><h2 title="Комаровский берег">Комаровский берег</h2></a>
-                                <a href="#" class="trail-location" title="Ленинградская область, г. Сестрорецк"><p>Ленинградская область, п. Муркино</p></a>
+                                <a href="#" class="trail-title-link">
+                                    <h2 title="Комаровский берег">Комаровский берег</h2>
+                                </a>
+                                <a href="#" class="trail-location" title="Ленинградская область, г. Сестрорецк">
+                                    <p>Ленинградская область, п. Муркино</p>
+                                </a>
                                 <div class="trail-spec">
                                     <a href="#" class="trail-distance">
                                         <img src="img/dist.svg" alt="Длина тропы">
@@ -186,8 +290,12 @@
                         <div class="popular-item swiper-slide">
                             <img src="img/trail-image.png" alt="Экотропа" class="trail-img">
                             <div class="trail-info">
-                                <a href="#" class="trail-title-link"><h2 title="Комаровский берег">Комаровский берег</h2></a>
-                                <a href="#" class="trail-location" title="Ленинградская область, г. Сестрорецк"><p>Ленинградская область, п. Муркино</p></a>
+                                <a href="#" class="trail-title-link">
+                                    <h2 title="Комаровский берег">Комаровский берег</h2>
+                                </a>
+                                <a href="#" class="trail-location" title="Ленинградская область, г. Сестрорецк">
+                                    <p>Ленинградская область, п. Муркино</p>
+                                </a>
                                 <div class="trail-spec">
                                     <a href="#" class="trail-distance">
                                         <img src="img/dist.svg" alt="Длина тропы">
@@ -207,8 +315,12 @@
                         <div class="popular-item swiper-slide">
                             <img src="img/trail-image.png" alt="Экотропа" class="trail-img">
                             <div class="trail-info">
-                                <a href="#" class="trail-title-link"><h2 title="Комаровский берег">Комаровский берег</h2></a>
-                                <a href="#" class="trail-location" title="Ленинградская область, г. Сестрорецк"><p>Ленинградская область, п. Муркино</p></a>
+                                <a href="#" class="trail-title-link">
+                                    <h2 title="Комаровский берег">Комаровский берег</h2>
+                                </a>
+                                <a href="#" class="trail-location" title="Ленинградская область, г. Сестрорецк">
+                                    <p>Ленинградская область, п. Муркино</p>
+                                </a>
                                 <div class="trail-spec">
                                     <a href="#" class="trail-distance">
                                         <img src="img/dist.svg" alt="Длина тропы">
@@ -259,7 +371,7 @@
 
         <!-- faq  -->
         <div class="faq">
-            <div class="title faq-title">FAQ</div>
+            <div id="faq-href" class="title faq-title">FAQ</div>
             <div class="wrap">
                 <div class="faq-content">
                     <details class="faq-item">
@@ -268,7 +380,11 @@
                                 ЧТО ДЕЛАТЬ, ЕСЛИ ОТСТАЛ ОТ ГРУППЫ?
                             </h3>
                         </summary>
-                        <p class="faq-item-text">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Залетают вершину до назад переписывается последний деревни, одна на берегу вопрос речью. Рекламных меня своих путь по всей свою эта рукопись лучше точках маленький имеет переписывается живет все, переписали, строчка на берегу маленькая единственное гор использовало. Деревни, пустился пунктуация необходимыми бросил вскоре семантика.</p>
+                        <p class="faq-item-text">Далеко-далеко за словесными горами в стране, гласных и согласных живут
+                            рыбные тексты. Залетают вершину до назад переписывается последний деревни, одна на берегу
+                            вопрос речью. Рекламных меня своих путь по всей свою эта рукопись лучше точках маленький
+                            имеет переписывается живет все, переписали, строчка на берегу маленькая единственное гор
+                            использовало. Деревни, пустился пунктуация необходимыми бросил вскоре семантика.</p>
                     </details>
                     <details class="faq-item">
                         <summary class="faq-item-title">
@@ -276,7 +392,11 @@
                                 ЧТО ДЕЛАТЬ, ЕСЛИ ОТСТАЛ ОТ ГРУППЫ?
                             </h3>
                         </summary>
-                        <p class="faq-item-text">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Залетают вершину до назад переписывается последний деревни, одна на берегу вопрос речью. Рекламных меня своих путь по всей свою эта рукопись лучше точках маленький имеет переписывается живет все, переписали, строчка на берегу маленькая единственное гор использовало. Деревни, пустился пунктуация необходимыми бросил вскоре семантика.</p>
+                        <p class="faq-item-text">Далеко-далеко за словесными горами в стране, гласных и согласных живут
+                            рыбные тексты. Залетают вершину до назад переписывается последний деревни, одна на берегу
+                            вопрос речью. Рекламных меня своих путь по всей свою эта рукопись лучше точках маленький
+                            имеет переписывается живет все, переписали, строчка на берегу маленькая единственное гор
+                            использовало. Деревни, пустился пунктуация необходимыми бросил вскоре семантика.</p>
                     </details>
                     <details class="faq-item">
                         <summary class="faq-item-title">
@@ -284,7 +404,11 @@
                                 ЧТО ДЕЛАТЬ, ЕСЛИ ОТСТАЛ ОТ ГРУППЫ?
                             </h3>
                         </summary>
-                        <p class="faq-item-text">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Залетают вершину до назад переписывается последний деревни, одна на берегу вопрос речью. Рекламных меня своих путь по всей свою эта рукопись лучше точках маленький имеет переписывается живет все, переписали, строчка на берегу маленькая единственное гор использовало. Деревни, пустился пунктуация необходимыми бросил вскоре семантика.</p>
+                        <p class="faq-item-text">Далеко-далеко за словесными горами в стране, гласных и согласных живут
+                            рыбные тексты. Залетают вершину до назад переписывается последний деревни, одна на берегу
+                            вопрос речью. Рекламных меня своих путь по всей свою эта рукопись лучше точках маленький
+                            имеет переписывается живет все, переписали, строчка на берегу маленькая единственное гор
+                            использовало. Деревни, пустился пунктуация необходимыми бросил вскоре семантика.</p>
                     </details>
                     <details class="faq-item">
                         <summary class="faq-item-title">
@@ -292,17 +416,43 @@
                                 ЧТО ДЕЛАТЬ, ЕСЛИ ОТСТАЛ ОТ ГРУППЫ?
                             </h3>
                         </summary>
-                        <p class="faq-item-text">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Залетают вершину до назад переписывается последний деревни, одна на берегу вопрос речью. Рекламных меня своих путь по всей свою эта рукопись лучше точках маленький имеет переписывается живет все, переписали, строчка на берегу маленькая единственное гор использовало. Деревни, пустился пунктуация необходимыми бросил вскоре семантика.</p>
+                        <p class="faq-item-text">Далеко-далеко за словесными горами в стране, гласных и согласных живут
+                            рыбные тексты. Залетают вершину до назад переписывается последний деревни, одна на берегу
+                            вопрос речью. Рекламных меня своих путь по всей свою эта рукопись лучше точках маленький
+                            имеет переписывается живет все, переписали, строчка на берегу маленькая единственное гор
+                            использовало. Деревни, пустился пунктуация необходимыми бросил вскоре семантика.</p>
                     </details>
                 </div>
             </div>
         </div>
-
     </main>
 
-
-
-
+    <!-- Прдвал -->
+    <footer class="footer">
+        <div class="container-footer">
+            <div class="footer-child1">
+                <a class="href-logo" href="https://eco-trails.ru/"><svg class="logo-picture-footer" width="28"
+                        height="34" viewBox="0 0 28 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path id="logo-picture-color-footer"
+                            d="M25.9076 8.95654C26.6043 10.606 26.9997 12.4108 26.9997 14.3319V19.6685C26.9997 27.0427 21.2001 33.0002 14.0637 33.0002C12.6138 33.0002 11.2016 32.7479 9.90234 32.3016M22.9328 4.62887C20.6167 2.3778 17.491 1 14.0451 1C6.88986 1 1.09037 6.97696 1.09037 14.3317C1.09037 16.9903 0.770216 19.6877 1.33511 22.3075C1.86234 24.772 3.04864 27.1007 4.72448 28.9442M16.1346 25.354C15.4944 25.6062 14.7977 25.7421 14.0633 25.7421C10.8246 25.7421 8.18848 23.0253 8.18848 19.6875V14.9719M11.4844 8.87868C12.2564 8.49056 13.1225 8.2771 14.0452 8.2771C17.2839 8.2771 19.9201 10.9939 19.9201 14.3317V19.6682C19.9201 19.9981 19.9012 20.3474 19.8448 20.6579M14.0449 15.2051V18.1936"
+                            stroke="#F7FBFB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </a>
+                <strong class="footer-child1-text">Экотропы России</strong>
+            </div>
+            <div class="footer-child2">
+                <p class="author_rules">&copy Экотропы России, 2023</p>
+                <a class="konfident" href="https://eco-trails.ru/policy/">Политика конфиденциальности</a>
+            </div>
+            <div class="footer-child3">
+                <button type="button" class="button-footer">
+                    <img class="callback-img" src="./img/message1.svg" alt="callback" /><img class="callback-img-hover"
+                        src="./img/message2.svg" alt="logo-hover">
+                    <p class="button-text">Напишите нам</p>
+                </button>
+            </div>
+        </div>
+    </footer>
     <!-- swiper for top-trails-block  -->
     <script src="js/swiper-bundle.min.js"></script>
     <script>
@@ -322,10 +472,10 @@
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev",
             },
-        });
-
-
-
+        })
     </script>
+    <script src="./js/headerScript.js"></script>
+    <script defer src="./js/footer_script.js"></script>
 </body>
+
 </html>

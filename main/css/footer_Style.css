@@ -1,0 +1,181 @@
+* {
+  margin: 0 auto;
+  padding: 0;
+}
+.footer {
+  background-color: #1f271b;
+  max-width: 1600px;
+  width: 100%;
+  height: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+.container-footer {
+  max-width: 1600px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 195px;
+  padding-right: 190px;
+}
+
+/* Стилизация logo */
+
+.footer-child1 {
+  display: flex;
+  flex-direction: row;
+}
+.container-logo-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo-picture-footer {
+  margin-right: 10px;
+  width: 26px;
+  height: 32px;
+}
+.footer-child1-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #f7fbfb;
+  width: 93px;
+  font-family: "a_AvanteInt";
+  font-style: italic;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  padding-top: 2px;
+}
+
+/* Стилизация  центральной надписи со значком авторских прав */
+
+.footer-child2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.author_rules {
+  color: #f7fbfb;
+  font-style: normal;
+  font-family: "a_AvanteInt";
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  padding-right: 9px;
+  padding-bottom: 10px;
+}
+
+/* Стилизация конпки обратной связи */
+
+.button-footer {
+  height: 50px;
+  width: 193px;
+  font-size: 11px;
+  font-family: "Inter";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 0;
+  border-radius: 10px;
+  background-color: #f3f6ed;
+  transition: 400px;
+}
+.button-footer-hover {
+  background-color: #f19953;
+}
+.callback-img {
+  padding-right: 3px;
+  width: 32px;
+  height: 28px;
+  margin: 0;
+}
+.callback-img-hover {
+  padding-right: 3px;
+  width: 32px;
+  height: 28px;
+  margin: 0;
+}
+.button-text {
+  color: #1f271b;
+  margin: 0;
+  font-family: "a_AvanteInt";
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.3px;
+}
+.button-text-hover {
+  color: white;
+  margin: 0;
+  font-family: "a_AvanteInt";
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.3px;
+}
+
+/* Ссылка на политику конфиденциальности */
+
+.konfident {
+  color: #f7fbfb;
+  width: 170px;
+  font-family: "a_AvanteInt";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+}
+
+/* Адаптив под планшет 1024px */
+
+@media (max-width: 1024px) {
+  .container-footer {
+    padding: 0;
+  }
+  .footer-child1 {
+    margin-left: 21px;
+  }
+  .footer-child3 {
+    margin-right: 20px;
+  }
+}
+/* Адаптив под телефон 375px */
+
+@media (max-width: 360px) {
+  .container-footer {
+    padding: 0;
+  }
+  .footer-child1-text {
+    display: none;
+  }
+  .logo-footer {
+    padding: 0;
+  }
+  .author_rules {
+    padding-right: 0;
+    font-style: normal;
+    font-size: 14px;
+  }
+  .button-text {
+    display: none;
+  }
+  .button-footer {
+    width: 38px;
+    height: 38px;
+  }
+  .callback-img {
+    padding-left: 3px;
+  }
+}
+
+@font-face {
+  font-family: "a_AvanteInt";
+  src: url(./fonts/a_AvanteInt_Book.ttf);
+}
