@@ -365,15 +365,6 @@ text-align: center;
 
 .popular-list{
 padding-top: 32px;
-display: flex;
-flex-direction: column;
-align-items: center;
-padding: 0px;
-isolation: isolate;
-
-position: absolute;
-width: 320px;
-height: 530px;
 left: 0px;
 top: 0.13px;
     
