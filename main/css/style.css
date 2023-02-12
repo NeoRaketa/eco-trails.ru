@@ -406,7 +406,7 @@ text-align: center;
 }
 
 
-/*планшет1*/
+/*планшет*/
 
 @media (max-width: 1024px) {
   .wrap {
@@ -470,7 +470,7 @@ text-align: center;
   padding-top: 32px;
   left: 0px;
   top: 0.13px;
-      
+  
   }
   
   .trail-info{
