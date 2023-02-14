@@ -308,6 +308,116 @@ details[open] summary ~ * {
   font-family: Avante Book;
 }
 
+
+
+/*планшет*/
+
+@media (max-width: 1024px) {
+  .wrap {
+     padding-left: 30px;
+     padding-right: 30px;   
+  }
+  
+  .popular{
+      background-position: right 150px;
+    }
+
+    .intro-content{
+      padding-top: 36px; 
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-image: none;
+  }
+
+
+  .intro-title{
+
+    width: 100%;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 54px;
+    text-align: center;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.intro-btn{
+  font-size: 16px;
+  line-height: 26px;
+  padding: 16px 18px;
+  font-style: normal;
+  font-weight: 700;
+  
+  display: flex;
+  align-items: center;
+  text-align: center;   
+  }
+  
+  .popular-title{
+    width: 198px;
+    height: 31px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 130%;
+    text-align: center;
+  
+  }
+  
+  
+  .popular-list{
+  padding-top: 32px;
+  left: 0px;
+  top: 0.13px;
+  
+  }
+  
+  .trail-info{
+      width: 100%;
+  }
+  
+  .partner-title {
+
+  width: 231px;
+  height: 34px;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 34px;
+  text-align: center;
+  
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+
+
+  }
+  
+  .faq-title {
+    width: 54px;
+    height: 34px;
+  
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 34px;
+    text-align: center;
+    
+  flex: none;
+    order: 1;
+    flex-grow: 0;
+    }
+  
+}
+
+
+
 /* телефон */
 
 @media (max-width:640px){
@@ -397,111 +507,6 @@ text-align: center;
 }
 
 
-/*планшет*/
-
-@media (max-width: 1024px) {
-  .wrap {
-     padding-left: 30px;
-     padding-right: 30px;   
-  }
-  
-  .popular{
-      background-position: right 150px;
-    }
-
-    .intro-content{
-      padding-top: 36px; 
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      background-image: none;
-  }
-
-
-  .intro-title{
-
-    width: 100%;
-
-    font-style: normal;
-    font-weight: 700;
-    font-size: 44px;
-    line-height: 54px;
-    text-align: center;
-
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-}
-
-.intro-btn{
-  font-size: 16px;
-  line-height: 26px;
-  padding: 16px 18px;
-  font-style: normal;
-  font-weight: 700;
-  
-  display: flex;
-  align-items: center;
-  text-align: center;   
-  }
-  
-  .popular-title{
-    width: 198px;
-    height: 31px;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 130%;
-    text-align: center;
-  
-  }
-  
-  
-  .popular-list{
-  padding-top: 32px;
-  left: 0px;
-  top: 0.13px;
-  
-  }
-  
-  .trail-info{
-      width: 100%;
-  }
-  
-  .partner-title {
-
-  width: 231px;
-  height: 34px;
-
-  font-style: normal;
-  font-weight: 700;
-  font-size: 28px;
-  line-height: 34px;
-  text-align: center;
-  
-  flex: none;
-  order: 1;
-  flex-grow: 0;
-
-
-  }
-  
-  .faq-title {
-    width: 54px;
-    height: 34px;
-  
-    font-style: normal;
-    font-weight: 700;
-    font-size: 28px;
-    line-height: 34px;
-    text-align: center;
-    
-  flex: none;
-    order: 1;
-    flex-grow: 0;
-    }
-  
-}
 
 /* расположение линий */
 
