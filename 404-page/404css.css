@@ -1,3 +1,23 @@
+@font-face {
+	font-family: 'a_AvanteInt_Bold'; 
+	src: url(.//fonts/a_AvanteInt_Bold.ttf); 
+}
+
+@font-face {
+	font-family: 'a_AvanteInt_BoldItalic'; 
+	src: url(./fonts/a_AvanteInt_BoldItalic.ttf); 
+}
+
+@font-face {
+	font-family: 'a_AvanteInt_Book'; 
+	src: url(./fonts/a_AvanteInt_Book.ttf); 
+}
+
+@font-face {
+	font-family: 'a_AvanteInt_BookItalic'; 
+	src: url(./fonts/a_AvanteInt_BookItalic.ttf); 
+}
+
 * {
     margin: 0 auto;
     padding: 0;
@@ -27,9 +47,9 @@
   }
   .logo-text {
     width: 93px;
-    font-family: "Montserrat";
+    font-family: "a_AvanteInt_BookItalic";
     font-size: 16px;
-    font-weight: 700;
+    font-weight: 300;
   }
   .center-navigation {
     display: flex;
@@ -49,11 +69,11 @@
   .header-text {
     color: black;
     text-decoration: none;
-    font-family: "Inter";
+    font-family: 'a_AvanteInt_Book';
     font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 26px;
+    font-weight: 300;
+font-size: 18px;
+line-height: 22px;
   }
   .icon-navigation {
     list-style-type: none;
@@ -90,6 +110,8 @@
   }
   
 
+/* Тело 404-начало */
+
 .page_404{
     background-color: #F3F6ED;
 }
@@ -99,11 +121,11 @@
 }
 
 .txt_1404, .txt_2404, .txt_3404{
-    font-family: 'Inter';
+    font-family: 'a_AvanteInt_Book';
 font-style: normal;
-font-weight: 400;
-font-size: 20px;
-line-height: 26px;
+font-weight: 300;
+font-size: 24px;
+line-height: 145%;
 color: #1F271B;
 order: 0;
 flex-grow: 0;
@@ -111,15 +133,19 @@ flex-grow: 0;
 
 .num_404{
 height: 44px;
-font-family: 'Inter';
+font-family: 'a_AvanteInt_Bold';
 font-style: normal;
-font-weight: 1000;
-font-size: 40px;
-line-height: 44px;
+font-weight: 700;
+font-size: 32px;
+line-height: 39px;
 color: #1F271B;
 padding-bottom: 45px;
 padding-top: 45px;
 text-align: center;
+}
+
+.txt_2404{
+  padding-bottom: 24px;
 }
 
 .txt_3404{
@@ -127,8 +153,20 @@ text-align: center;
 }
 
 .link_catalog{
-    color: #1F271B;
+    color: #F19953;
 }
+
+.line_left{
+  padding-right: 20px;
+  padding-bottom: 5px;
+}
+
+.line_right{
+  padding-left: 20px;
+  padding-bottom: 5px;
+}
+
+/* Тело 404-конец */
 
 .footer {
     background: #1F271B;
@@ -138,8 +176,11 @@ text-align: center;
     justify-content: space-between;
     align-items: center;
     gap: 10px;
-    height: 100px;
-    margin-top: 150px;
+    position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100px
 }
 
 .footer_logo,
@@ -155,12 +196,12 @@ text-align: center;
 }
 
 .logo-title {
-  font-family: "Montserrat";
-    font-weight: 300;
+    font-family: "a_AvanteInt_BookItalic";
     font-size: 16px;
-    line-height: 19px;
-    color: #F7FBFB;
-    max-width: 70px;
+    font-weight: 300;
+    color: #fcfcfc;
+    width: 93px;
+    
 }
 
 .footer_copyright {
@@ -171,7 +212,7 @@ text-align: center;
 }
 
 .copyright-org {
- 
+    font-family: 'a_AvanteInt_Book';
     font-style: normal;
     font-weight: 300;
     font-size: 14px;
@@ -182,7 +223,7 @@ text-align: center;
 }
 
 .copyright-link {
- 
+  font-family: 'a_AvanteInt_Book';
     font-style: normal;
     font-weight: 300;
     font-size: 12px;
@@ -212,7 +253,9 @@ text-align: center;
     font-size: 16px;
     line-height: 22px;
     max-width: 119px;
-    font-family: 'Inter';
+    font-family: 'a_AvanteInt_Book';
+    order: 1;
+flex-grow: 0;
 }
 
 /*---медиа запросы для Планшет----*/
