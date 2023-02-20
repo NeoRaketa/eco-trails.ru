@@ -123,7 +123,7 @@
                         <div class="popular-item swiper-slide">
                             <img src="img/trail-image.png" alt="Экотропа" class="trail-img">
                             <div class="trail-info">
-                                <a href="#" class="trail-title-link"><h2 title="Комаровский берег">Комаровский берег</h2></a>
+                                <a href="#" class="trail-title-link"><h2 title="В парке Монрепо">В парке Монрепо</h2></a>
                                 <a href="#" class="trail-location" title="Ленинградская область, г. Сестрорецк"><p>Ленинградская область, п. Муркино</p></a>
                                 <div class="trail-spec">
                                     <a href="#" class="trail-distance">
@@ -144,7 +144,7 @@
                         <div class="popular-item swiper-slide">
                             <img src="img/trail-image.png" alt="Экотропа" class="trail-img">
                             <div class="trail-info">
-                                <a href="#" class="trail-title-link"><h2 title="Комаровский берег">Комаровский берег</h2></a>
+                                <a href="#" class="trail-title-link"><h2 title="В парке Монрепо">В парке Монрепо</h2></a>
                                 <a href="#" class="trail-location" title="Ленинградская область, г. Сестрорецк"><p>Ленинградская область, п. Муркино</p></a>
                                 <div class="trail-spec">
                                     <a href="#" class="trail-distance">
@@ -165,7 +165,7 @@
                         <div class="popular-item swiper-slide">
                             <img src="img/trail-image.png" alt="Экотропа" class="trail-img">
                             <div class="trail-info">
-                                <a href="#" class="trail-title-link"><h2 title="Комаровский берег">Комаровский берег</h2></a>
+                                <a href="#" class="trail-title-link"><h2 title="В парке Монрепо">В парке Монрепо</h2></a>
                                 <a href="#" class="trail-location" title="Ленинградская область, г. Сестрорецк"><p>Ленинградская область, п. Муркино</p></a>
                                 <div class="trail-spec">
                                     <a href="#" class="trail-distance">
@@ -186,28 +186,7 @@
                         <div class="popular-item swiper-slide">
                             <img src="img/trail-image.png" alt="Экотропа" class="trail-img">
                             <div class="trail-info">
-                                <a href="#" class="trail-title-link"><h2 title="Комаровский берег">Комаровский берег</h2></a>
-                                <a href="#" class="trail-location" title="Ленинградская область, г. Сестрорецк"><p>Ленинградская область, п. Муркино</p></a>
-                                <div class="trail-spec">
-                                    <a href="#" class="trail-distance">
-                                        <img src="img/dist.svg" alt="Длина тропы">
-                                        <p>5</p>
-                                    </a>
-                                    <a href="#" class="trail-difficulty">
-                                        <img src="img/difficulty.svg" alt="Сложность тропы">
-                                        <p>Простая</p>
-                                    </a>
-                                    <a href="#" class="trail-duration">
-                                        <img src="img/duration.svg" alt="Длительность тропы">
-                                        <p>2</p>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="popular-item swiper-slide">
-                            <img src="img/trail-image.png" alt="Экотропа" class="trail-img">
-                            <div class="trail-info">
-                                <a href="#" class="trail-title-link"><h2 title="Комаровский берег">Комаровский берег</h2></a>
+                                <a href="#" class="trail-title-link"><h2 title="В парке Монрепо">В парке Монрепо</h2></a>
                                 <a href="#" class="trail-location" title="Ленинградская область, г. Сестрорецк"><p>Ленинградская область, п. Муркино</p></a>
                                 <div class="trail-spec">
                                     <a href="#" class="trail-distance">
@@ -226,13 +205,22 @@
                             </div>
                         </div>
 
+                        
 
                     </div>
                 </div>
 
-                <div class="swiper-button-next swiper-myBtn"></div>
-                <div class="swiper-button-prev swiper-myBtn"></div>
-                <div class="swiper-pagination"></div>
+                <div class="swiper-controlls">
+                    <div class="nav-control">
+                        <div class="swiper-left-btn"></div>
+                    </div>
+
+                    <div class="swiper-pagination"></div>
+                    
+                    <div class="nav-control">
+                        <div class="swiper-right-btn"></div>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -301,36 +289,33 @@
     </main>
 
 
-
-
     <!-- swiper for top-trails-block  -->
+    <script src="js/script.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script>
-        let swiper = new Swiper(".popular-list", {
-            slidesPerView: 3,
-            spaceBetween: 80,
-            slidesPerGroup: 3,
+        let swiperPopular = new Swiper(".popular-list", {
+            slidesPerView: 1,
+            spaceBetween: 40,
+            slidesPerGroup: 1,
             loop: true,
-            centerSlide: 'true',
-            fade: 'true',
+            centeredSlidesBounds: true,
             grabCursor: 'true',
             pagination: {
                 el: ".swiper-pagination",
                 clickable: true,
             },
             navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
+                nextEl: ".swiper-right-btn",
+                prevEl: ".swiper-left-btn",
             },
             breakpoints: {
-                320: {
-                    slidesPerView: 1,
-                },
-                480: {
+                640: {
                     slidesPerView: 2,
+                    slidesPerGroup: 2,
                 },
-                992: {
-                    slidesPerView: 3,
+                1100: {
+                    slidesPerView: 4,
+                    slidesPerGroup: 4,
                 }
             },
         });
