@@ -1,0 +1,176 @@
+
+@font-face {
+    font-family: 'Avante Bold';
+    src: url(../../fonts/a_AvanteInt_Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Avante Bold Italic';
+    src: url(../../fonts/a_AvanteInt_BoldItalic.ttf);
+}
+
+@font-face {
+    font-family: 'Avante Book';
+    src: url(../../fonts/a_AvanteInt_Book.ttf);
+}
+
+@font-face {
+    font-family: 'Avante Book Italic';
+    src: url(../../fonts/a_AvanteInt_BookItalic.ttf);
+}
+*{
+    font-family: 'Avante Bold', sans-serif;
+    padding: 0;
+    margin: 0;
+    /* box-sizing: border-box; */
+}
+.container{
+    margin: 0 auto;
+    max-width: 1600px;
+}
+.header{
+background: rgba(243, 246, 237, 0.55);
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 999;
+       
+
+
+
+}
+.header__wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.header__logo{
+    padding-top: 23px;
+    padding-bottom: 23px;
+}
+.header_list{
+    list-style-type: none;
+    
+}
+.header_link{
+    text-decoration: none;
+    font-family: 'a_AvanteInt';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 22px;
+        color: #1F271B;
+}
+.header_list{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+
+
+}
+.header_item{
+    margin-right: 68px;
+    padding-bottom: 34.5px;
+    
+    
+}
+.header_item:last-child{
+    margin-right: 0px;
+}
+.header__mapsearch{
+   
+        padding-bottom:25px;
+}
+.search{
+    margin-right: 22px;
+}
+#map {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.footer{
+    background: #373E34;
+    position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        
+      
+       
+}
+.footer__wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.footer__logo{
+   padding-top: 23px;
+   padding-bottom: 23px;
+}
+.copyright_title{
+    font-family: 'a_AvanteInt';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+    color: #F7FBFB;
+    padding-top: 24.5px;
+    
+}
+.policy_link{
+    font-family: 'a_AvanteInt';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 14px;
+        
+        text-decoration-line: underline;
+        color:#F7FBFB;
+        padding-bottom: 24.5px;
+        padding-top: 10px;
+        
+        
+}
+
+    .contact_btn{
+         font-family: 'a_AvanteInt';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 22px;
+            border-radius: 8px;
+            border: none;
+            margin-top: 20px ;
+            padding: 14px;
+            background: white url(./img/Icons\ h-f.svg) no-repeat;
+            background-position: 17px;
+           padding-left: 58px;
+           padding-right: 15px;
+           padding-top: 14px;
+padding-bottom: 14px;
+    }
+
+
+.copyright{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
+/* JS CSS */
+
+
+.balloon_content{
+    width: 252px;
+    height: 252px;
+}
+
+
