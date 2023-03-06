@@ -1,4 +1,4 @@
-addEventListener("load", () => {
+document.addEventListener("DOMContentLoaded", () => {
   const swicthBtn = document.querySelector('.switch-btn');
   const switchList = document.querySelector('.switch-list-icon');
   const switchMap = document.querySelector('.switch-map-icon');

@@ -75,6 +75,7 @@ a { text-decoration: none; color: #1F271B; }
   background-position: center;
   text-align: center;
   margin-bottom: 110px;
+  height: 100vh;
   padding: 300px 0 308px;
   animation: slideBG 12s linear infinite 0s;
   animation-timing-function: ease-in-out;
@@ -133,13 +134,20 @@ a { text-decoration: none; color: #1F271B; }
   margin-bottom: 180px;
 }
 
+.popular-title {
+  margin-bottom: 0;
+}
+
 .popular > .wrap {
-  padding-bottom: 60px;
+  max-width: 1288px;
 } 
 
 .popular-list {
-  margin: 0px 110px;
-  overflow: hidden;
+  margin: 64px 20px 0;
+}
+
+.popular-wrap {
+  max-width: 1288px;
 }
 
 .swiper-pagination-bullet {
@@ -164,17 +172,46 @@ a { text-decoration: none; color: #1F271B; }
   background: #1F271B;
 }
 
-.swiper-myBtn {
-  color: #1F271B;
+.swiper-controlls {
+  display: flex;
+  max-width: 230px;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 60px;
 }
+
+.swiper-pagination {
+  position: relative;
+  max-width: 140px;
+}
+
+.swiper-left-btn {
+  background: url(../img/leftarrow.svg) no-repeat;
+}
+.swiper-right-btn {
+  background: url(../img/rightarrow.svg) no-repeat;
+}
+
+.swiper-left-btn, .swiper-right-btn {
+  background-size: cover;
+  height: 40px;
+  width: 30px;
+  cursor: pointer;
+}
+
 
 .popular-item {
   max-width: 282px;
   background: #F7FBFB;
-  border: 1px solid black;
-  box-shadow: 0px 28px 38px rgba(0, 0, 0, 0.12), 0px 12px 22px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 7px 12px rgba(0, 0, 0, 0.12), 0px 16px 20px rgba(0, 0, 0, 0.1), 0px 18px 20px rgba(0, 0, 0, 0.08);
   border-radius: 8px;
-  transition: all .2s ease;
+  transition: all .4s ease;
+  -webkit-transition: all .4s ease;
+  -moz-transition: all .4s ease;
+  -ms-transition: all .4s ease;
+  -o-transition: all .4s ease;
+  z-index: 10;
 }
 
 .popular-item:hover {
@@ -182,6 +219,8 @@ a { text-decoration: none; color: #1F271B; }
 }
 
 .trail-img {
+  object-fit: cover;
+  width: auto;
   filter: drop-shadow(0px 3px 8px rgba(0, 0, 0, 0.35));
   border-radius: 8px;
 }
@@ -308,9 +347,183 @@ details[open] summary ~ * {
   font-family: Avante Book;
 }
 
+@media (max-width: 1350px) {
+  .popular > .wrap {
+    max-width: 1078px;
+  }
+  
+  .popular-wrap {
+    max-width: 1078px;
+  }
+
+  .popular-item {
+    max-width: 229px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .popular > .wrap {
+    max-width: 643px;
+  } 
+  
+  .popular-wrap {
+    max-width: 643px;
+  }
+
+  .popular-item {
+    max-width: 282px;
+  }
+}
+
+/*планшет*/
+
+@media (max-width: 1024px) {
+  .title {
+    margin-bottom: 48px;
+  }
+  .popular-title {
+    margin-bottom: -26px;
+  }
+  
+  .wrap {
+    padding-left: 30px;
+    padding-right: 30px;   
+  }
+  
+  .popular{
+    background-position: right 150px;
+  }
+
+  .popular > .wrap {
+    max-width: 643px;
+    padding: 0 !important;
+  } 
+  
+  .popular-wrap {
+    max-width: 643px;
+  }
+
+  .intro-content{
+    padding-top: 36px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: none;
+  }
+
+
+  .intro-title{
+
+    width: 100%;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 54px;
+    text-align: center;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+
+  .intro-btn{
+    font-size: 16px;
+    line-height: 26px;
+    padding: 16px 18px;
+    font-style: normal;
+    font-weight: 700;
+    
+    display: flex;
+    align-items: center;
+    text-align: center;   
+  }
+  
+  .popular-title{
+    /* height: 31px; */
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 130%;
+    text-align: center;
+  
+  }
+  
+  
+  .popular-list{
+    padding-top: 32px;
+    left: 0px;
+    top: 0.13px;
+  
+  }
+  
+  .trail-info{
+    width: 100%;
+  }
+  
+  .partner-title {
+
+    width: 231px;
+    height: 34px;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 34px;
+    text-align: center;
+    
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+
+
+  }
+  
+  .faq-title {
+    width: 54px;
+    height: 34px;
+  
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 34px;
+    text-align: center;
+    
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+  }
+  
+}
+
+
+
 /* телефон */
 
-@media (max-width:640px){
+@media (max-width:640px) {
+  .intro {
+    margin-bottom: 72px;
+  }
+
+  .popular-title::before {
+    top: 30px;
+  }
+  .popular-title::after {
+    top: 30px;
+  }
+
+  .popular-item {
+    max-width: 320px;
+  }
+
+  .popular > .wrap {
+    max-width: 358px;
+    padding: 0 !important;
+  } 
+  
+  .popular-wrap {
+    max-width: 358px;
+  }
 
   .intro{
   min-height: 360px;
@@ -352,8 +565,8 @@ text-align: center;
 }
 
 .popular-title{
-  width: 198px;
-  height: 31px;
+  max-width: 198px;
+  /* height: 31px; */
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -365,15 +578,6 @@ text-align: center;
 
 .popular-list{
 padding-top: 32px;
-display: flex;
-flex-direction: column;
-align-items: center;
-padding: 0px;
-isolation: isolate;
-
-position: absolute;
-width: 320px;
-height: 530px;
 left: 0px;
 top: 0.13px;
     
@@ -384,8 +588,6 @@ top: 0.13px;
 }
 
 .partner-title {
-width: 198px;
-height: 31px;
 font-style: normal;
 font-weight: 700;
 font-size: 24px;
@@ -394,8 +596,6 @@ text-align: center;
 }
 
 .faq-title {
-  width: 198px;
-  height: 31px;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -406,118 +606,78 @@ text-align: center;
 }
 
 
-/*планшет*/
 
-@media (max-width: 1024px) {
-  .wrap {
-     padding-left: 30px;
-     padding-right: 30px;   
-  }
-  
-  .popular{
-      background-position: right 150px;
-    }
+/* расположение линий */
 
-    .intro-content{
-      padding-top: 36px; 
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      background-image: none;
-  }
-
-
-  .intro-title{
-
-    width: 100%;
-
-    font-style: normal;
-    font-weight: 700;
-    font-size: 44px;
-    line-height: 54px;
-    text-align: center;
-
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-}
-
-.intro-btn{
-  font-size: 16px;
-  line-height: 26px;
-  padding: 16px 18px;
-  font-style: normal;
-  font-weight: 700;
+/* @media only screen and (max-width: 1024px) {
   
-  display: flex;
-  align-items: center;
-  text-align: center;   
-  }
-  
-  .popular-title{
-    width: 198px;
-    height: 31px;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 130%;
-    text-align: center;
-  
-  }
-  
-  
-  .popular-list{
-  padding-top: 32px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0px;
-  isolation: isolate;
-  
-  position: absolute;
-  width: 320px;
-  height: 530px;
-  left: 0px;
-  top: 0.13px;
-      
-  }
-  
-  .trail-info{
-      width: 100%;
-  }
-  
-  .partner-title {
-
-  width: 231px;
-  height: 34px;
-
-  font-style: normal;
-  font-weight: 700;
-  font-size: 28px;
-  line-height: 34px;
-  text-align: center;
-  
-  flex: none;
-  order: 1;
-  flex-grow: 0;
-
-
-  }
-  
-  .faq-title {
-    width: 54px;
-    height: 34px;
-  
-    font-style: normal;
-    font-weight: 700;
-    font-size: 28px;
-    line-height: 34px;
-    text-align: center;
+  .title::before {
+    position: absolute;
     
-  flex: none;
-    order: 1;
-    flex-grow: 0;
-    }
+    left: -84px;
+    content: url(../img/title-left-line.png);
+    margin-top: 32px;
+  }
   
-}
+  .title::after {
+    position: absolute;
+   
+    right: -84px;
+    content: url(../img/title-right-line.png);
+    margin-top: 32px;
+  }
+  
+  .title2::before {
+    position: absolute;
+    
+    left: -84px;
+    content: url(../img/title-left-line.png);
+    margin-top: 0px;
+  }
+  
+  .title2::after {
+    position: absolute;
+   
+    right: -84px;
+    content: url(../img/title-right-line.png);
+    margin-top: 0px;
+  }
 
+  
+  }
+
+  @media only screen and (max-width: 640px) {
+  
+    .title::before {
+      position: absolute;
+      
+      left: -60px;
+      content: url(../img/title-left-line-mob.svg);
+      margin-top: 30px;
+    }
+    
+    .title::after {
+      position: absolute;
+     
+      right: -60px;
+      content: url(../img/title-right-line-mob.svg);
+      margin-top: 30px;
+    }
+    
+    .title2::before {
+      position: absolute;
+      
+      left: -60px;
+      content: url(../img/title-left-line-mob.svg);
+      margin-top: 0px;
+    }
+    
+    .title2::after {
+      position: absolute;
+     
+      right: -60px;
+      content: url(../img/title-right-line-mob.svg);
+      margin-top: 0px;
+    }
+    
+    } */
