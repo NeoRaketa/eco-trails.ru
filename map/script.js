@@ -76,7 +76,39 @@ ymaps.ready(function () {
     [44.505151, 33.510385],
     {
       hintContent: "Начало маршрута",
-      balloonContent: `32`,
+      balloonContent: `<figure class="popular-item swiper-slide">
+    <img src="BALLON CONTENT/for-slider-21-Крым-Фиолентовская-тропа.jpg" alt="Экотропа" class="trail-img">
+    <figcaption class="trail-info">
+        <a href="#" class="trail-title-link">
+            <h2 title="Фиолентовская тропа" id="color-letters" class="bold-paragraph size-card-elem-h2">Фиолентовская
+                тропа</h2>
+        </a>
+        <a href="#" id="trail-location" class="trail-location-black " title="Республика Крым, мыс Фиолент">
+            <p class="size-card-elem-p" id="color-letters">Республика Крым, мыс Фиолент</p>
+        </a>
+        <div class="trail-spec">
+            <a href="#" class="trail-distance">
+                <div class="img-card-color">
+                    <img src="BALLON CONTENT/dist-black.svg" alt="Длина тропы">
+                </div>
+                <p id="color-letters" class="bold-paragraph">2 км</p>
+            </a>
+            <a href="#" class="trail-difficulty">
+                <div class="img-card-color">
+                    <img src="BALLON CONTENT/difficulty-black.svg" alt="Сложность тропы">
+                </div>
+                <p id="color-letters" class="bold-paragraph">Простая</p>
+            </a>
+            <a href="#" class="trail-duration">
+                <div class="img-card-color">
+                    <img src="BALLON CONTENT/duration-black.svg" alt="Длительность тропы">
+                </div>
+                <p id="color-letters" class="bold-paragraph">~1 ч</p>
+            </a>
+        </div>
+    </figcaption>
+</figure>
+      `,
     },
     {
       iconLayout: "default#image",
@@ -84,6 +116,7 @@ ymaps.ready(function () {
       iconImageSize: [32, 51],
       iconImageOffset: [-10, -45],
     }
+    
   );
 
   var endPoint = new ymaps.Placemark(

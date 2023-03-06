@@ -1,0 +1,337 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.footer {
+  max-width: 100%;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 112px;
+  text-align: center;
+  height: 90px;
+  z-index: 200;
+  background-color: #373e34;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.container-footer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 20px 0 20px 0;
+}
+
+/* Стилизация logo */
+
+.footer-child1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 191px;
+}
+.container-logo-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.logo-footer {
+  width: 40px;
+  height: 44px;
+}
+.footer-child1-text {
+  padding-left: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: start;
+  color: #f7fbfb;
+  width: 93px;
+  font-family: "a_AvanteInt";
+  font-style: italic;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  padding-top: 2px;
+}
+
+/* Стилизация  центральной надписи со значком авторских прав */
+
+.footer-child2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: 50px;
+}
+.author_rules {
+  color: #f7fbfb;
+  font-style: normal;
+  font-family: "a_AvanteInt";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  padding-right: 3px;
+  padding-bottom: 10px;
+}
+.footer-child3 {
+  padding-right: 191px;
+}
+/* Стилизация конпки обратной связи */
+
+.button-footer {
+  height: 50px;
+  width: 193px;
+  font-size: 11px;
+  font-family: "Inter";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border: solid 0;
+  border-radius: 10px;
+  background-color: #f3f6ed;
+  -webkit-transition: 400px;
+  -o-transition: 400px;
+  transition: 400px;
+}
+
+.callback-img {
+  padding-right: 3px;
+  width: 36px;
+  height: 36px;
+  margin: 0;
+}
+
+.button-text {
+  color: #1f271b;
+  margin: 0;
+  font-family: "a_AvanteInt";
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.3px;
+}
+
+/* Ссылка на политику конфиденциальности */
+
+.konfident {
+  color: #f7fbfb;
+  width: 170px;
+  font-family: "a_AvanteInt";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  text-decoration: underline;
+}
+
+/* Форма */
+/* .container-footer-form {
+  max-width: 1600px;
+  height: 900px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.footer-form {
+  background-color: white;
+  width: 480px;
+  height: 607px;
+  box-shadow: 0 0 5px 2px;
+  margin: 10px;
+  border-radius: 20px;
+}
+.form-content {
+  padding: 22px 20px 20px 20px;
+}
+.forms {
+  width: 100%;
+  height: 402px;
+}
+.head-popup-footer {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+}
+.close-button {
+  margin: 0;
+  width: 30px;
+  height: 30px;
+  background-color: #ffffff;
+  border: solid 0;
+}
+.container-footer-popup-form {
+  padding-bottom: 20px;
+}
+.footer-popup-form {
+  box-sizing: border-box;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  width: 100%;
+  height: 47px;
+  border: 1px solid #000000;
+  border-radius: 20px;
+  padding-left: 13px;
+  padding-top: 8px;
+  padding-bottom: 12px;
+}
+.upform-text {
+  margin: 0;
+  font-family: "Inter";
+  padding-bottom: 10px;
+}
+
+.footer-popup-area {
+  resize: none;
+  box-sizing: border-box;
+  width: 100%;
+  height: 166px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  border-radius: 20px;
+  padding-left: 13px;
+  padding-top: 8px;
+}
+.footer-popup-checkbox {
+  width: 24px;
+  height: 24px;
+  border-radius: 20px;
+  margin-right: 20px;
+}
+.checkbox-paragraph {
+  width: 100%;
+  height: 30px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 10px;
+  color: #000000;
+}
+.container-end-popup-footer {
+  width: 100%;
+  height: 30px;
+  margin-bottom: 24px;
+}
+.end-popup-footer {
+  display: inline-flex;
+}
+.footer-popup-button {
+  width: 440px;
+  height: 48px;
+  border-radius: 20px;
+  background-color: black;
+  color: white;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  transition: 400ms;
+}
+.footer-popup-button:hover {
+  background-color: white;
+  color: #000000;
+} */
+/* Адаптив под планшет 1024px */
+
+@media (max-width: 1024px) {
+  .footer {
+    margin-top: 96px;
+    width: 100%;
+  }
+
+  .footer-child1 {
+    padding: 0;
+    margin-left: 21px;
+  }
+  .footer-child3 {
+    padding: 0;
+    margin-right: 20px;
+  }
+}
+
+/* Адаптив под телефон 360px */
+
+@media (max-width: 360px) {
+  .footer-child2 {
+    margin: 0;
+  }
+  .footer-child1-text {
+    display: none;
+  }
+  .logo-footer {
+    padding: 0;
+  }
+  .author_rules {
+    padding-right: 0;
+    font-style: normal;
+    font-size: 14px;
+  }
+  .button-text {
+    display: none;
+  }
+  .button-footer {
+    width: 50px;
+    height: 50px;
+  }
+  .callback-img {
+    padding-left: 3px;
+  }
+}
+
+@font-face {
+  font-family: "a_AvanteInt";
+  src: url(./fonts/a_AvanteInt_Book.ttf);
+}

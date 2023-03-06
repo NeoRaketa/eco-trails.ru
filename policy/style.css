@@ -50,3 +50,57 @@ table{
     text-align: center;
     
 }
+h1{
+    font-family: 'a_AvanteInt';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 39px;
+        text-align: center;
+        text-transform: uppercase;
+    
+        color: #1F271B;
+}
+body{
+    background-color: #F3F6ED;;
+}
+
+h2{
+    font-family: 'a_AvanteInt';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 39px;
+        /* identical to box height */
+    
+    
+        /* Black */
+    
+        color: #1F271B;
+}
+p{
+    font-family: 'a_AvanteInt';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 145%;
+        /* or 35px */
+    
+    
+        /* Black */
+    
+        color: #1F271B;
+}
+li{
+    font-family: 'a_AvanteInt';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 145%;
+        /* or 35px */
+    
+    
+        /* Black */
+    
+        color: #1F271B;
+}
